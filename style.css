@@ -1,0 +1,305 @@
+  /* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #f7f3ef 0%, #fdfaf7 100%);
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: #222 !important;
+}
+
+.nav-link:hover {
+    color: #c8a97e !important;
+}
+/* LOGO */
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #3a2f2a;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3a2f2a;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c8a97e;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #c8a97e;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-image {
+    width: 10%;
+    float: left;
+    height: 200px;
+    display: block;
+    margin: 20px 0;
+
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.hero-text {
+    width: 42%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.hero-text p {
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin: 10px 0;
+    color: #5a5a5a;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    margin: 20px 0;
+    color: #2b2b2b;
+}
+
+/* =========================
+   BUTTON (UPGRADED)
+========================= */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 32px;
+    border: 1px solid #c8a97e;
+    text-decoration: none;
+    color: #c8a97e;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #c8a97e;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   SECTION BASE
+========================= */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 15px;
+    color: #555;
+}
+
+/* =========================
+   MENU CARDS (UPGRADED)
+========================= */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 260px;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.menu-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #c8a97e;
+    font-weight: bold;
+}
+
+/* =========================
+   GALLERY CARDS
+========================= */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.card {
+    width: 260px;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.rating {
+    color: gold;
+    margin: 5px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    margin-top: 50px;
+    color: #666;
+    background: #faf7f3;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:900px){
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+    }
+
+    .menu, .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* =========================
+   ANIMATION
+========================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

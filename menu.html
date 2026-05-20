@@ -1,49 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Hallie's Corner Cafe & Bakery</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <title>Menu | Hallie's Bakery</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
+
 <body>
-    <header>
-        <h1>Our Menu</h1>
-        <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>
-                <a href="gallery.html">Gallery</a>
-        
+
+<!-- HEADER -->
+<header class="shadow-sm bg-white">
+
+    <nav class="navbar navbar-expand-lg container py-3">
+
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="#">
+            Hallie's Bakery
+        </a>
+
+        <!-- MOBILE MENU -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav gap-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="menu.html">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
             </ul>
-                <section>
-                    <button type="button" onclick="alert('ORDER NOW')">ORDER NOW!</button>
-                </section>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Coffee & Beverages</h2>
-            <ul>
-                <li>Espresso - P50</li>
-                <li>Cappuccino - P40</li>
-                <li>Latte - P45</li>
-                <li>Tea - P25</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Pastries & Desserts</h2>
-            <ul>
-                <li>Croissant - P15</li>
-                <li>Fresh Loaf - P20</li>
-                <li>Fruit Tart - P35</li>                             
-                <li>Chocolate Cake - P50</li>
-            </ul> 
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Hallie's Corner Cafe & Bakery. All rights reserved.</p>
-    </footer>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- MENU SECTION -->
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+            Our Menu
+        </h1>
+
+        <p class="text-muted">
+            Freshly baked goods made with love every day
+        </p>
+
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- ITEM 1 -->
+        <div class="col-md-4">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <img src="Chocolate Caramel Toffee Cake.jpg"
+                     class="card-img-top"
+                     alt="Chocolate Cake">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">
+                        Chocolate Cake
+                    </h5>
+
+                    <p class="price">
+                        P120
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="col-md-4">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <img src="Cupcakes.jpg"
+                     class="card-img-top"
+                     alt="Cupcakes">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">
+                        Cupcakes
+                    </h5>
+
+                    <p class="price">
+                        P80
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="col-md-4">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <img src="donuts.jpg"
+                     class="card-img-top"
+                     alt="Donuts">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">
+                        Donuts
+                    </h5>
+
+                    <p class="price">
+                        P50
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DRINKS SECTION -->
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Coffee & Beverages
+        </h2>
+
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- ESPRESSO -->
+        <div class="col-md-3">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <img src="Espresso Coffee Recipe.jpg"
+                     class="card-img-top"
+                     alt="Espresso">
+
+                <div class="card-body text-center">
+
+                    <h5>Espresso</h5>
+
+                    <p class="price">
+                        P50
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CAPPUCCINO -->
+        <div class="col-md-3">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <img src="Cappuccino.jpg"
+                     class="card-img-top"
+                     alt="Cappuccino">
+
+                <div class="card-body text-center">
+
+                    <h5>Cappuccino</h5>
+
+                    <p class="price">
+                        P40
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LATTE -->
+        <div class="col-md-3">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <img src="Stunning Latte Art Heart Design_ Espresso Pour-Over Coffee Creations.jpg"
+                     class="card-img-top"
+                     alt="Latte">
+
+                <div class="card-body text-center">
+
+                    <h5>Latte</h5>
+
+                    <p class="price">
+                        P45
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TEA -->
+        <div class="col-md-3">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <img src="tea.jpg"
+                     class="card-img-top"
+                     alt="Tea">
+
+                <div class="card-body text-center">
+
+                    <h5>Tea</h5>
+
+                    <p class="price">
+                        P25
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PASTRIES -->
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Pastries & Desserts
+        </h2>
+
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center p-4 h-100">
+                <h5>Croissant</h5>
+                <img src="download (32).jpg" class="card-img-top" alt="Croissant">
+                <p class="price">P15</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center p-4 h-100">
+                <h5>Fresh Loaf</h5>
+                <img src="fresh loaf.jpg" class="card-img-top" alt="Fresh Loaf">
+                <p class="price">P20</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center p-4 h-100">
+                <h5>Fruit Tart</h5>
+                <img src="Fruit Tart.jpg" class="card-img-top" alt="Fruit Tart">
+                <p class="price">P35</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm text-center p-4 h-100">
+                <h5>Chocolate Cake Slice</h5>
+                <img src="Double chocolate Cake.jpg" class="card-img-top" alt="Chocolate Cake Slice">
+                <p class="price">P50</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VISIT SECTION -->
+<section class="container py-5 text-center">
+
+    <h2 class="fw-bold mb-4">
+        Visit Us To Place Your Order
+    </h2>
+
+    <p class="text-muted mb-4">
+        We would love to welcome you to Hallie's Corner Cafe & Bakery.
+    </p>
+
+    <a href="contact.html" class="btn btn-dark px-4 py-2">
+        Visit Us
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light text-center py-4 mt-5">
+
+    © 2026 Hallie's Corner Cafe & Bakery. All rights reserved.
+
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

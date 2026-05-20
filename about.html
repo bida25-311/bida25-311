@@ -1,48 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Our Company</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <title>About | Hallie's Bakery</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
-<body>  
-    <header>
-        <h1>About Us</h1>
-        <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>
-                <a href="gallery.html">Gallery</a>
+
+<body>
+
+<!-- HEADER -->
+<header class="shadow-sm bg-white">
+
+    <nav class="navbar navbar-expand-lg container py-3">
+
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="#">
+            Hallie's Bakery
+        </a>
+
+        <!-- MOBILE MENU -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav gap-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Our Story  (History of the Bakery)</h2>
-            <p>Founded in 2010, Hallie's Corner Cafe & Bakery began with a simple love for baking and desire to bring people together.What started as small, homemade treats shared with family and friends quickly gained recognition for its quality, warmth, and authenticity.</p>
-            <p> By Year 2020, the growing suport from the community inspired the transition into a dedicated bakery space , transforing the vision into a welcoming corner where customer could gather, connect, and feel at home.</p>  
-            <p> Today, Hallie's Bakery Corner stands as a reflection of passion, patience,commitment and dedication. Every day product is turned every day into a moments into something special, continuing the jorney that started witha a dream and a love for baking.</p>       
-        </section>
-        <section>
-            <h2>Our Mission & Values</h2>
-            <p>Our mission is to make delicious, high quality freshly baked goods that bring comfort and joy to our customers.</p>
-            <p> we believe in:</p>
-            <p> Authenticity-everything is made love and care.</p>
-            <p> Consistency - every bite should feel special as the first one</p>
-            <p> Community - we are more than just a bakery, we are a place where people come together to share moments and create memories.</p>
-            <p> Passion - we are passionate about what we do, and it shows in every product we create. We are committed to using the best ingredients and techniques to ensure that every bite is a delight for our customers.</p>
-        </section>
-        <section>
-            <h2>Our Commitment to Quality & Hospitality</h2>    
-            <p>We are committed to providing the highest quality baked goods using fresh ingredients and taking the time to get every detail right.From the soft texture of our cakes flavour of our pastries quality is never compromised. At Hallie's Corner Cafe & Bakery, your're always welcomed with warmth, kindness and genuine care, providing exceptional hospitality to all our customers. Our dedication to excellence is reflected in every aspect of our business, from the sourcing of our ingredients to the service we provide.</p>
-            <p>We welcome you to vist Hallie's Corner Cafe & Bakery! and be part of the moments we make sweater every day.</p
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Our Company. All rights reserved.</p>
-    </footer>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ABOUT SECTION -->
+<section class="container py-5">
+
+    <!-- STORY -->
+    <div class="row justify-content-center mb-5">
+
+        <div class="col-lg-9">
+
+            <div class="card border-0 shadow-sm p-5">
+
+                <h2 class="fw-bold text-center mb-4">
+                    Our Story
+                </h2>
+
+                <p>
+                    Founded in 2010, Hallie's Corner Cafe & Bakery began with
+                    a simple love for baking and a desire to bring people together.
+                    What started as homemade treats shared with family and friends
+                    quickly gained recognition for its warmth, quality, and authenticity.
+                </p>
+
+                <p>
+                    By 2020, the growing support from the community inspired
+                    the transition into a dedicated bakery space where customers
+                    could gather, relax, and feel at home.
+                </p>
+
+                <p>
+                    Today, Hallie's Corner Cafe & Bakery reflects passion,
+                    patience, commitment, and dedication. Every baked product
+                    is carefully made to create memorable moments for customers.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- VALUES -->
+    <div class="row justify-content-center mb-5">
+
+        <div class="col-lg-9">
+
+            <div class="card border-0 shadow-sm p-5">
+
+                <h2 class="fw-bold text-center mb-4">
+                    Our Values
+                </h2>
+
+                <p>
+                    • Quality ingredients<br><br>
+
+                    • Fresh baking every day<br><br>
+
+                    • Warm hospitality and customer care<br><br>
+
+                    • Passion and dedication in every product<br><br>
+
+                    • Building meaningful community connections
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PROMISE -->
+    <div class="row justify-content-center">
+
+        <div class="col-lg-9">
+
+            <div class="card border-0 shadow-sm p-5">
+
+                <h2 class="fw-bold text-center mb-4">
+                    Our Promise
+                </h2>
+
+                <p>
+                    We are committed to providing the highest quality baked goods using fresh ingredients and taking the time to get every detail right.From the soft texture of our cakes flavour of our pastries quality is never compromised. At Hallie's Corner Cafe & Bakery, your're always welcomed with warmth, kindness and genuine care, providing exceptional hospitality to all our customers. Our dedication to excellence is reflected in every aspect of our business, from the sourcing of our ingredients to the service we provide.
+                </p>
+
+                <p>
+                    Our goal is to create a welcoming environment where
+                    every customer feels valued and enjoys a memorable experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light text-center py-4 mt-5">
+
+    © 2026 Hallie's Corner Cafe & Bakery. All rights reserved.
+
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

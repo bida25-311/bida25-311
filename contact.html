@@ -1,50 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Hallie's Corner Cafe & Bakery</title>
+
+    <title>Contact | Hallie's Bakery</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>
-                <a href="gallery.html">Gallery</a>
+
+<!-- HEADER -->
+<header class="shadow-sm bg-white">
+
+    <nav class="navbar navbar-expand-lg container py-3">
+
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="#">
+            Hallie's Bakery
+        </a>
+
+        <!-- MOBILE MENU -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav gap-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+
             </ul>
 
-            </nav>
-    </header>
-    <main>
-        <!-- Contact Information -->
-         <section>
-        <p>If you'd like to get in touch, feel free to email us at <a href="mailto:info@halliescorner.com">info@halliescorner.com</a></p>
-        <p>Phone: 123-456-7890</p>
-        <p>Address: 123 Main Street, Gaborone</p>
-        <iframe src="https://maps.google.com/maps?q=Gaborone&t=&z=13&ie=UTF8&iwloc=&output=embed" width="400" height="300"></iframe>
-        <p>Business Hours: Monday - Friday: 8:00 AM - 6:00 PM, Saturday - Sunday: 9:00 AM - 5:00 PM</p>
-        </section>
-        <!-- feedback form -->
-        <section>
-             <h2>Feedback Form</h2>
-             <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <button type="submit">Submit</button>
-             </form>
-        </section>
- </main>
-    <footer>
-        <p>&copy; 2026 Hallie's Corner Cafe & Bakery. All rights reserved.</p>
-    </footer>  
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+            Contact Us
+        </h1>
+
+        <p class="text-muted">
+            We'd love to hear from you
+        </p>
+
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- CONTACT INFO -->
+        <div class="col-lg-4">
+
+            <div class="card border-0 shadow-sm h-100 p-4">
+
+                <h3 class="mb-4">
+                    Get In Touch
+                </h3>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    halliesbakery@gmail.com
+                </p>
+
+                <p>
+                    <strong>Phone:</strong><br>
+                    +267 123 4567
+                </p>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    Gaborone, Kb mall downstairs
+                </p>
+
+                <p class="mt-4 text-muted">
+                    Visit Hallie's Corner Cafe & Bakery for freshly baked treats and warm hospitality.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="col-lg-6">
+
+            <div class="card border-0 shadow-sm p-4">
+
+                <h3 class="mb-4">
+                    Send Message
+                </h3>
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Your Name">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Your Email">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <textarea class="form-control"
+                                  rows="5"
+                                  placeholder="Your Message"></textarea>
+
+                    </div>
+
+                    <button class="btn btn-dark px-4 py-2">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light text-center py-4 mt-5">
+
+    © 2026 Hallie's Corner Cafe & Bakery. All rights reserved.
+
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html> 
-                
+</html>

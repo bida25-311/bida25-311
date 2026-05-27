@@ -1,6 +1,6 @@
-// =========================
+
 // SMOOTH SCROLL
-// =========================
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();
@@ -11,9 +11,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// =========================
+
 // ACTIVE NAV LINK
-// =========================
+
 const links = document.querySelectorAll("nav a");
 
 links.forEach(link => {
@@ -23,9 +23,9 @@ links.forEach(link => {
 });
 
 
-// =========================
+
 // FADE-IN ON SCROLL
-// =========================
+
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
@@ -45,9 +45,9 @@ faders.forEach(fader => {
 });
 
 
-// =========================
+
 // ORDER MODAL (SAFE VERSION)
-// =========================
+
 function openModal() {
     const modal = document.getElementById("orderModal");
     if(modal){
@@ -63,9 +63,9 @@ function closeModal() {
 }
 
 
-// =========================
+
 // CONTACT FORM VALIDATION
-// =========================
+
 const form = document.querySelector("form");
 
 if(form){

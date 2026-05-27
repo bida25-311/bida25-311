@@ -82,9 +82,8 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* =========================
+
    HERO SECTION
-========================= */
 .hero {
     height: 90vh;
     display: flex;
@@ -136,9 +135,7 @@ nav a:hover::after {
     color: #2b2b2b;
 }
 
-/* =========================
    BUTTON (UPGRADED)
-========================= */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -157,9 +154,7 @@ nav a:hover::after {
     transform: translateY(-2px);
 }
 
-/* =========================
    SECTION BASE
-========================= */
 .section {
     padding: 80px 20px;
     text-align: center;
@@ -179,9 +174,7 @@ nav a:hover::after {
     color: #555;
 }
 
-/* =========================
    MENU CARDS (UPGRADED)
-========================= */
 .menu {
     display: flex;
     justify-content: center;
@@ -214,9 +207,7 @@ nav a:hover::after {
     font-weight: bold;
 }
 
-/* =========================
    GALLERY CARDS
-========================= */
 .gallery {
     display: flex;
     justify-content: center;
@@ -250,9 +241,7 @@ nav a:hover::after {
     margin: 5px 0;
 }
 
-/* =========================
    FOOTER
-========================= */
 footer {
     text-align: center;
     padding: 30px;
@@ -262,9 +251,7 @@ footer {
     background: #faf7f3;
 }
 
-/* =========================
    RESPONSIVE
-========================= */
 @media(max-width:900px){
 
     header {
@@ -288,18 +275,3 @@ footer {
     }
 }
 
-/* =========================
-   ANIMATION
-========================= */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s ease forwards;
-}
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
